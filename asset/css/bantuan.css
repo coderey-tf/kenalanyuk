@@ -1,0 +1,105 @@
+@font-face {
+  font-family: montserrat;
+  src: url(../font/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: montserrat-med;
+  src: url(../font/Montserrat-Medium.ttf);
+}
+
+:root {
+  --primarycolor: #45AAF2;
+}
+
+html,
+body {
+  background: linear-gradient(-38deg, #45aaf2, white);
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+
+  margin-top: -5px;
+  margin-left: -1px;
+  position: fixed;
+
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--primarycolor);
+}
+
+.header {
+  color: var(--primarycolor);
+  font-family: montserrat;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+
+  margin-top: -10px;
+  padding: 15px;
+}
+
+.header h3 {
+  padding-left: 100px;
+}
+
+.container {
+  margin-top: -20px;
+  font-family: montserrat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: left;
+
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+div.desc p {
+  font-family: montserrat-med;
+  font-size: 12px;
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+a.menus {
+  text-decoration: none;
+}
+
+.menus {
+  background-color: white;
+  color: var(--primarycolor);
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  padding: 10px 15px;
+  width: 280px;
+  font-size: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
