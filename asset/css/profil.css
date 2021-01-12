@@ -10,6 +10,7 @@
 html,
 body {
   background: linear-gradient(-38deg, #45aaf2, white);
+  height: 100%;
 }
 
 body {
@@ -23,18 +24,18 @@ body {
 
 .header {
 
-  height: 70px;
+  height: 55px;
   background-color: var(--primarycolor);
   border-radius: 0 0 0 52px;
   box-shadow: -5px 7px 20px #00000030;
 
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-family: montserrat;
 
   padding-left: 50px;
 
-  padding-top: 50px;
+  padding-top: 35px;
   margin-top: -20px;
   padding-bottom: -80px;
 }
@@ -49,6 +50,10 @@ body {
   justify-content: center;
 }
 
+a.menus {
+  text-decoration: none;
+}
+
 .menus {
   background-color: white;
   color: var(--primarycolor);
@@ -57,20 +62,35 @@ body {
   margin-bottom: -10px;
   padding: 10px 15px;
   width: 280px;
-  font-size: 20px;
+  font-size: 15px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
 }
 
 p.title {
   flex: 1;
 }
 
+
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: var(--primarycolor);
+}
+
 .navbar {
-  margin-top: 45px;
-  height: 70px;
+  bottom: 0;
+  position: fixed;
+  width: 360px;
+  overflow: hidden;
+  /* margin-top: 35px; */
+  height: 50px;
   background-color: white;
   border-radius: 0 52px 0px 0px;
   box-shadow: 7px -3px 20px #00000025;
@@ -82,5 +102,13 @@ p.title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px 30px;
+  padding-top: 20px;
+
+}
+
+section.bwh {
+  padding-left: 20px;
+  padding-right: 25px;
+  /* padding-top: 5px;
+  padding-bottom: 25px; */
 }
